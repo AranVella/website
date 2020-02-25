@@ -197,22 +197,7 @@ form input[type="submit"]:hover {
 
 /* { border:1px solid red; } */
 
-#fixedElement {
-  background-color: #B65649; /* Grey background */
-  padding: 2px 1px; /* Some padding */
-  color: white;
-  height: 150px;
-  text-align: center; /* Centered text */
-  font-size: 1.5rem; /* Big font size */
-  font-weight: bold;
-  position: fixed; /* Fixed position - sit on top of the page */
-  top: 0;
-  width: 100%; /* Full width */
-  transition: 0.2s; 
-}
-
-@media screen and (min-width: 750px) {
-  #fixedElement {
+.fixedElement {
   background-color: #B65649; /* Grey background */
   padding: 2px 1px; /* Some padding */
   color: white;
@@ -225,5 +210,23 @@ form input[type="submit"]:hover {
   width: 100%; /* Full width */
   transition: 0.2s; 
 }
-}
 
+@media screen and (min-width: 750px)
+{
+.fixedElement
+{
+
+  background-color: #B65649; /* Grey background */
+  padding: 2px 1px; /* Some padding */
+  color: white;
+  height: 150px;
+  text-align: center; /* Centered text */
+  font-size: 1.5rem; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; 
+
+}
+}
