@@ -1,0 +1,229 @@
+/* TEMPLATE STYLESHEET */
+
+
+/* These are some suggested groupings for your stylesheet... */
+
+/* Default styling styling for the body.*/
+
+body {
+    font-family: 'Oswald', sans-serif;  /* update with Google font, web safe font and generic fallback */
+    font-size: 100%; /* the default browser font size is 16px */
+    line-height: 1 ; /* update to suit your type choices */
+    color: #d4d0cf;  /* base text colour - update to suit your design */
+    background-color: #332f2e;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    
+}
+a{
+    color: #d4d0cf;
+  }
+  a:hover {
+    color: #bf2d22;
+  }
+/* Improves default font styles for forms  */
+
+input,
+textarea {
+    font-family: 'Oswald', sans-serif; /* update with Google font, web safe font and generic fallback */
+}
+
+/* box sizing */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+/* flexible content images code */
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+  
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+
+      
+
+/* navigation (using flexbox) */
+
+
+/* page header */
+
+.page-header {
+  background: #B65649;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* just styling from here */
+.header-content {
+  width: 100vw;
+  font-size: 1.35rem;
+  color: #fff;
+  text-align: center;
+}
+/* creating 'buttons' from hyperlinks */
+.header-content a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 0.2em;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  top: 0;
+}
+
+.header-content a:hover 
+{
+  background: #d3d1d1;
+}
+/* main layout */
+
+.container-content{
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 10px;
+}
+
+/* styling for the section content */
+
+
+/* background colours for sections */
+
+
+
+/* image gallery media queries and size overrides */
+
+.image-gallery h2 {
+  text-align: center;
+}
+
+.image-gallery .container-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-gallery .an-image {
+  margin: 0;
+}
+
+.image-gallery .image-caption {
+  padding: 8px 0 50px 0;
+}
+
+@media screen and (min-width: 750px) {
+  .image-gallery .image-container {
+    display: flex;
+}
+
+.image-gallery .an-image 
+{
+  flex: 33%;
+  padding: 20px;
+  color: #332f2e;
+  background: #d4d0cf;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+}
+
+
+/* form styling */
+
+form label 
+{
+  display: block;
+  /* instead of inline */
+  padding-bottom: 0.2em;
+  padding-top: 1em;
+}
+
+form input,
+form textarea 
+{
+  padding: 0.4em 0.3em;
+  font-size: 1em;
+  border: 1px solid #bbb; 
+  border-radius: 0.2em;
+  min-width: 90%;
+  max-width: 90%;
+}
+
+form input[type="submit"] 
+{
+  min-width:0;
+  background-color: #B65649;
+  border: 0;
+  border-radius: 0.2em;
+  padding: 13px 30px;
+  margin-top: 10px;
+  /* top and bottom, left and right */
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+form input[type="submit"]:hover {
+  background-color: #b30;
+}
+
+/* footer */
+
+/* { border:1px solid red; } */
+
+#fixedElement {
+  background-color: #B65649; /* Grey background */
+  padding: 2px 1px; /* Some padding */
+  color: white;
+  height: 150px;
+  text-align: center; /* Centered text */
+  font-size: 1.5rem; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; 
+}
+
+@media screen and (min-width: 750px) {
+  #fixedElement {
+  background-color: #B65649; /* Grey background */
+  padding: 2px 1px; /* Some padding */
+  color: white;
+  height: 200px;
+  text-align: center; /* Centered text */
+  font-size: 1.5rem; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; 
+}
+}
+
